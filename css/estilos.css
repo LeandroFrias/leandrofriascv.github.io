@@ -1,0 +1,234 @@
+
+/**
+
+
+*/
+
+* {
+    box-sizing: border-box;
+    
+  }
+#contactar{
+float: right;
+  }
+h3{
+  text-align: center;
+}
+.datos{
+ list-style: none;
+ padding-left: 0px;
+ margin-top: 90px;
+} 
+.datos li{
+  position: relative;
+  padding-left: 20px;
+  
+}
+
+.datos li#localizacion::before{
+ content: " ";
+ width: 16px;
+ height: 16px;
+ position: absolute;
+ background-image: url("https://opem.b-cdn.net/wp-content/uploads/2016/02/placeholder7-150x150.png");
+ background-size: cover; 
+ background-position: center;
+ left: 0;
+ top: 50%;
+ transform:translateY(-50%) ;
+}
+.datos li#telefono::before{
+  content: " ";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-image: url("https://opem.b-cdn.net/wp-content/uploads/2016/02/3-telefono-150x150.png");
+  background-size: cover; 
+  background-position: center;
+  left: 0;
+  top: 50%;
+  transform:translateY(-50%) ;
+ }
+ .datos li#correo::before{
+  content: " ";
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-image: url("https://opem.b-cdn.net/wp-content/uploads/2016/02/mail-128.png");
+  background-size: cover; 
+  background-position: center;
+  left: 0;
+  top: 50%;
+  transform:translateY(-50%) ;
+ }
+ .estudio{
+   list-style: none;
+   padding-left: 0px;
+   margin-top: 20px;
+ }
+ .estudio li{
+   position: relative;
+   padding-left: 20px;
+ }
+ .estudio li#est1::before{
+
+ content: " ";
+ width: 40px;
+ height: 40px;
+ position: absolute;
+ background-image: url(https://www.uncuyo.edu.ar/prensa/cache/itu--logo--blanco-web1_999_750.jpg);
+ background-size: cover; 
+ background-position: center;
+ left: 0;
+ top: 50%;
+ transform:translateY(-50%) ;
+
+ }
+ .estudio li#est2::before{
+  content: " ";
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  background-image: url(https://www.uncuyo.edu.ar/prensa/cache/itu--logo--blanco-web1_999_750.jpg);
+  background-size: cover; 
+  background-position: center;
+  left: 0;
+  top: 50%;
+  transform:translateY(-50%) ;
+ 
+ }
+ .estudio li#est3::before{
+  content: " ";
+  width: 50px;
+  height: 50px;
+  margin-left: 5px;
+  margin-top: 15px;
+  position: absolute;
+  background-image: url(https://www.economia.gob.ar/argentinaprograma/inscribite/logo-arg-prog.png);
+  background-size: cover; 
+  background-position: center;
+  left: 0;
+  top: 50%;
+  transform:translateY(-50%) ;
+ 
+ }
+ .estudio li#est4::before{
+  content: " ";
+  
+  width: 50px;
+  height: 50px;
+  margin-right: 40px;
+  position: absolute;
+  background-image: url("data:image/png;base64,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");
+  background-size: cover; 
+  background-position: center;
+  left: 0;
+  top: 50%;
+  transform:translateY(-50%) ;
+ } 
+  .estudio h4{
+
+    margin-left: 40px;
+  }
+  .estudio p{
+    margin-left: 60px;
+  }  
+  .conteiner{
+    margin: 0 auto;
+    
+    
+  }
+
+  #name{
+    color: #151516;
+    padding: 0px 5px 0px 5px;
+    margin-bottom: 0px;
+
+  }
+  #programador{
+    color: #151516;
+    padding: 0px 5px 0px 5px;
+    margin-top: 0px;
+    text-align: left;
+  }
+
+  .foto{
+    height:25vh ;
+    padding: 0px;
+    
+    
+  }
+  .imagen{
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    padding: 20px 20px 5px 0;
+    border-radius: 50%;
+    margin: 0 auto;
+
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+    
+  }
+  .cuerpo{
+    background-color: white;
+    
+  }
+
+  .contacto{
+    height: 25vh;
+  }
+  .nombre{
+    background-color: #101111;
+    background-image: linear-gradient(160deg, rgba(0, 147, 233, 0.5 ) 0%, #80D0C7 100%);
+
+    
+    padding: 30px 10px 10px 10px;
+  }
+  .buttons{
+    min-width: 700px;
+    justify-content: space-around;
+    
+  }
+  .buttons a{
+    text-decoration: none;
+    font-size: 28px;  
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background:#314652;
+    color: #f1f1f1;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0 ,.5) ;
+    transition: all .4s ease-in-out;
+  }
+  .buttons a:hover{
+    transform: scale(1.2);
+  }
+
+    
+
+  
+  .nombre.h1{ background-color: antiquewhite;}
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
